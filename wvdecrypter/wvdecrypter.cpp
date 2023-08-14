@@ -1261,7 +1261,7 @@ AP4_Result WV_CencSingleSampleDecrypter::DecryptSampleData(AP4_UI32 pool_id,
     }
   }
 
-  if (ret != cdm::Status::kSuccess)
+  if (1) //(ret != cdm::Status::kSuccess)
   {
     char buf[36]; buf[32] = 0;
     AP4_FormatHex(fragInfo.key_, 16, buf);
